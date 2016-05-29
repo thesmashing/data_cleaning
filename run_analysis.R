@@ -60,4 +60,5 @@ rm (test_data, test_data_y, test_data_sub, train_data, train_data_y, train_data_
 calculations <- train_test[, 3:dim(train_test)[2]]
 tidy_data <- aggregate(calculations, list(train_test$Subject, train_test$Activity), mean)
 names(tidy_data)[1:2] <- c('subject', 'activity')
-write.csv(tidy_data, "tidy_data.csv")
+#write.csv(tidy_data, "tidy_data.csv")
+write.table(tidy_data, "tidy_data.txt",  row.name=FALSE)
