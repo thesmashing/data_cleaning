@@ -6,9 +6,6 @@
 # 4. Appropriately labels the data set with descriptive variable names.
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-#Setting a local woring directory for the project 
-working_directory<-"/media/slawek/Dane1/temp/math/r/class/data_cleaning/w4/data_cleaning"
-setwd (working_directory)
 
 # Download and unzip data
 if (!file.exists("UCI HAR Dataset")){
